@@ -25,4 +25,8 @@ If you would have specified
 then you would have pushed your local master to origin/my_work. If you don't use the :my_work part, then the destination defaults to the same branch as given as 
 source.
 
+3. How to delete branch from remote?
+
+git push -d <remote_name> <branch_name>
+
 
