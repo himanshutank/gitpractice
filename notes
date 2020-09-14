@@ -25,4 +25,33 @@ FAQ:
 
 	git push -d <remote_name> <branch_name>
 
+4. How to search git logs
+	
+	git log --all --decorate --oneline --graph
+
+	git log -S <any_text_in_any_of_your_file>
+
+5. What to try when you think you messed something up?
+
+	git reflog 
+
+	git clean
+
+	git reset - - hard
+
+	git push --force
+
+6. .gitignore OR ./git/info/exclude
+
+	Tip is to keep all the configs in .gitignore. This will not allow 'git clean' to delete important config files.
+
+	Or keep config files outside of the repo.
+
+7. gitconfig settings
+
+	[log]
+	date = relative
+
+	[format]
+	pretty = format:%h %Cblue%ad%Creset %ae %Cgreen%s%Creset
 
