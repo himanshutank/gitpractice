@@ -1,32 +1,28 @@
-checking out branch feature of git app.
-
-checking out branch feature by implementing branch2 
-
-"notes
+FAQ:
 
 1. How to merge in a right way.
 
-git checkout master
-git pull
-git checkout <branch_name>
-git pull
-git rebase -i master
-git checkout master
-git merge
+	git checkout master
+	git pull
+	git checkout <branch_name>
+	git pull
+	git rebase -i master
+	git checkout master
+	git merge
 
 2. What does "git push origin master" means?
 
-This means push your local master branch to the master branch of the remote origin (origin/master)
+	This means push your local master branch to the master branch of the remote origin (origin/master)
 
-If you would have specified
+	If you would have specified
 
 	git push origin master:my_work
 
-then you would have pushed your local master to origin/my_work. If you don't use the :my_work part, then the destination defaults to the same branch as given as 
-source.
+	then you would have pushed your local master to origin/my_work. If you don't use the :my_work part, then the destination defaults to the 
+	same branch as given as source.
 
 3. How to delete branch from remote?
 
-git push -d <remote_name> <branch_name>
+	git push -d <remote_name> <branch_name>
 
 
